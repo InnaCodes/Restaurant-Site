@@ -1,6 +1,6 @@
 import React from 'react'
 import Popularr from '../components/Popularr'
-import Veggies from '../components/Veggies'
+import Veggiess from '../components/Veggiess'
 import {motion} from 'framer-motion'
 function Home() {
   return (
@@ -10,7 +10,7 @@ function Home() {
         exit={{opacity: 0}}
         transition={{duration: 0.5}}
     >
-        <Veggies/>
+        <Veggiess/>
         <Popularr/>
         
     </motion.div>

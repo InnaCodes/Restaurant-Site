@@ -6,7 +6,7 @@ import '@splidejs/splide/dist/css/splide.min.css';
 import { Link } from 'react-router-dom';
 
 
-function Veggies() {
+function Veggiess() {
     const [veggie, setVeggie] = useState([])
     useEffect(()=>{
         getVeggies()
@@ -109,4 +109,4 @@ const Gradient = styled.div`
     background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5))
 
 `
-export default Veggies
+export default Veggiess
