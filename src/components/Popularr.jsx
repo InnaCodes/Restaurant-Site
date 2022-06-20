@@ -6,7 +6,8 @@ import {Splide, SplideSlide} from '@splidejs/react-splide'
 import '@splidejs/splide/dist/css/splide.min.css';
 import { Link } from 'react-router-dom';
 
-function Popular() {
+
+function Popularr() {
     const [popular, setPopular] = useState([]);
     useEffect(()=>{
         getPopular()
@@ -111,4 +112,4 @@ const Gradient = styled.div`
     background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5))
 
 `
-export default Popular
+export default Popularr

@@ -4,7 +4,8 @@ import styled from 'styled-components'
 import {NavLink} from 'react-router-dom'
 
 
-function Category() {
+
+function Categories() {
   return (
     <List>
         <SLink to={'/cuisine/italian'}>
@@ -26,7 +27,7 @@ function Category() {
 
     </List>
   )
-}
+};
 
 const List = styled.div`
     display: flex;
@@ -71,4 +72,4 @@ const SLink = styled(NavLink)`
         height: 5rem;
     }
 `;
-export default Category
+export default Categories

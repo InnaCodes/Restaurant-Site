@@ -1,6 +1,6 @@
 import React from 'react'
 import Pages from './pages/Pages'
-import Category from './components/Category'
+import Categories from './components/Categories'
 import {BrowserRouter, Link} from 'react-router-dom'
 import Search from './components/Search'
 import {GiKnifeFork} from 'react-icons/gi'
@@ -17,7 +17,7 @@ function App() {
       <SiCodechef/>
       </Wrapper>
       <Search/>
-      <Category/>
+      <Categories/>
       <Pages/>
     </BrowserRouter>
   )
@@ -35,8 +35,8 @@ text-decoration: none;
 font-size: 1.5rem;
 font-weight: 400;
 font-family: 'Lobster Two', cursive;
-
 `
+
 const Nav = styled.div`
 padding: 4rem 0rem;
 display: flex;
