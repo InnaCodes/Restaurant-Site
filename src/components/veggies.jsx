@@ -5,6 +5,7 @@ import {Splide, SplideSlide} from '@splidejs/react-splide'
 import '@splidejs/splide/dist/css/splide.min.css';
 import { Link } from 'react-router-dom';
 
+
 function Veggies() {
     const [veggie, setVeggie] = useState([])
     useEffect(()=>{
@@ -59,7 +60,7 @@ function Veggies() {
     </Wrapper>
     </div>
   )
-}
+};
 const Wrapper = styled.div`
 margin: 4rem 0rem;
 `;
