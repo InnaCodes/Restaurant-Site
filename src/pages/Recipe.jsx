@@ -23,9 +23,10 @@ function Recipe() {
             <img src={details.image} alt={details.title}/>
         </div>
         <Info>
-            <Button className={activeTab === 'instructions' ? 'active': ''} onClick={()=>setActiveTab('instructions')}>Instructions</Button>
-            <Button className={activeTab === 'ingredients' ? 'active': ''} onClick={()=>setActiveTab('ingredients')}> Ingredients</Button>
-
+            <ButtonWrapper>
+                <Button className={activeTab === 'instructions' ? 'active': ''} onClick={()=>setActiveTab('instructions')}>Instructions</Button>
+                <Button className={activeTab === 'ingredients' ? 'active': ''} onClick={()=>setActiveTab('ingredients')}> Ingredients</Button>
+            </ButtonWrapper>
             {activeTab === 'instructions' && (
                 <div>
                     <h3 dangerouslySetInnerHTML={{__html: details.summary}}></h3>
@@ -63,6 +64,21 @@ li{
 ul{
     margin-top: 2rem;
 };
+@media (max-width: 900px){
+    flex-direction: column;
+    margin-top: 3rem;
+    img {
+        width: 100%;
+        border-radius: 2rem;
+    }
+    a {
+        text-decoration: none;
+    }
+    h4 {
+        text-align: center;
+        padding: 1rem
+    }
+}
 `
 
 const Button = styled.button`
@@ -72,9 +88,22 @@ const Button = styled.button`
     border: 2px solid black;
     margin-right: 2rem;
     font-weight: 600;
+   
 `
 
 const Info = styled.div`
 margin-left: 10rem;
+@media (max-width: 900px){
+    margin-left: 0rem;
+    margin-top: 2rem;
+    
+}
+`
+const ButtonWrapper = styled.div`
+    
+    @media (max-width: 900px){
+        display: flex;
+        flex-direction: row;
+    }
 `
 export default Recipe

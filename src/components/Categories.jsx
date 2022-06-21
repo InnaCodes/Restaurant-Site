@@ -66,7 +66,7 @@ const SLink = styled(NavLink)`
             color: white;
         }
     }
-    @media (max-width: 700px){
+    @media (max-width: 900px){
         margin-right: 0rem;
         width: 5rem;
         height: 5rem;

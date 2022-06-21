@@ -46,7 +46,7 @@ const FormStyle = styled.form`
         transform: translate(100%, -50%);
         color: white;
     }
-    @media(max-width: 700px){
+    @media(max-width: 900px){
         margin: 0rem;
     }
 `
